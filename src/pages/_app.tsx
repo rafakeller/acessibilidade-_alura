@@ -5,8 +5,7 @@ import { axeAcessibilityReporter } from '../utils/axeAcessibilityReporter'
 
 function MyApp({ Component, pageProps }) {
 
-  useEffect(()=>{
-    axeAcessibilityReporter();
+  useEffect(()=>{ axeAcessibilityReporter();
   },[])
   
   return <Component {...pageProps} />
